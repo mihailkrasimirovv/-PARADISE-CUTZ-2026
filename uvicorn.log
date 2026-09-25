@@ -1,0 +1,132 @@
+INFO:     Started server process [32764]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+INFO:     127.0.0.1:61816 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61830 - "POST /api/barber/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61844 - "POST /api/barber/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61845 - "GET /api/barber/reservations?barber=all&token=7c8ce4f981dd4633bd180ee3da6f586f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52478 - "GET /api/barber/reservations?barber=all&token=1642d2415577429ead9b7208a3c580be HTTP/1.1" 401 Unauthorized
+[EMAIL_SIMULATED] To: paradise_cutz2026@abv.bg
+Subject: Нова заявка за резервация - Test User
+
+Клиент: Test User
+Телефон: +359888
+Имейл: test@example.com
+Услуга: Подстригване
+Дата: 2026-09-28
+Час: 12:00
+Approve: http://127.0.0.1:8000/api/booking/actions?id=BK-42161FDB&token=2d50cc2558f642c6a6e9451127850669&action=confirm
+Decline: http://127.0.0.1:8000/api/booking/actions?id=BK-42161FDB&token=2d50cc2558f642c6a6e9451127850669&action=decline
+Cancel: http://127.0.0.1:8000/api/booking/actions?id=BK-42161FDB&token=2d50cc2558f642c6a6e9451127850669&action=cancel
+INFO:     127.0.0.1:49526 - "POST /api/booking HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49527 - "POST /api/barber/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49528 - "GET /api/barber/reservations?barber=all&token=564744099d3447719a2f3f5053af16c4 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56205 - "GET /api/barber/reservations?barber=all&token=1642d2415577429ead9b7208a3c580be HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:56428 - "POST /api/barber/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56428 - "GET /api/barber/reservations?barber=all&token=c991ae6a11ef47fc972a206d36d6f91c HTTP/1.1" 200 OK
+[EMAIL_SIMULATED] To: test@example.com
+Subject: Paradise Cutz Резервация отхвърлена
+
+Здравейте Test,
+
+Вашата резервация за Димака — Head Barber на 2026-09-28 в 12:00 е отхвърлена.
+
+Благодарим ви, че избрахте Paradise Cutz.
+INFO:     127.0.0.1:56081 - "POST /api/barber/reservations/BK-42161FDB/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56081 - "GET /api/barber/reservations?barber=all&token=c991ae6a11ef47fc972a206d36d6f91c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56081 - "GET /api/barber/reservations?barber=all&token=c991ae6a11ef47fc972a206d36d6f91c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56081 - "POST /api/barber/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56081 - "GET /api/barber/reservations?barber=all&token=d89fa4f473184ff7b19748fb6efe7966 HTTP/1.1" 200 OK
+[EMAIL_SIMULATED] To: paradise_cutz2026@abv.bg
+Subject: Нова заявка за резервация - tttttt ttttttttt
+
+Клиент: tttttt ttttttttt
+Телефон: 134567980
+Имейл: mihailkkkkk@gmail.com
+Услуга: Подстригване
+Дата: 2026-09-25
+Час: 18:00
+Approve: http://127.0.0.1:8000/api/booking/actions?id=BK-F479EC1D&token=597c51293db845c794f2551994312303&action=confirm
+Decline: http://127.0.0.1:8000/api/booking/actions?id=BK-F479EC1D&token=597c51293db845c794f2551994312303&action=decline
+Cancel: http://127.0.0.1:8000/api/booking/actions?id=BK-F479EC1D&token=597c51293db845c794f2551994312303&action=cancel
+INFO:     127.0.0.1:59302 - "POST /api/booking HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "POST /api/barber/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/barber/reservations?barber=all&token=84f1698402d14127a16a39cf53c7fdb2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/barber/reservations?barber=all&token=84f1698402d14127a16a39cf53c7fdb2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59302 - "GET /api/barber/reservations?barber=all&token=84f1698402d14127a16a39cf53c7fdb2 HTTP/1.1" 200 OK
+[EMAIL_SIMULATED] To: mihailkkkkk@gmail.com
+Subject: Paradise Cutz Резервация отхвърлена
+
+Здравейте tttttt,
+
+Вашата резервация за Гогата — Royal Barber на 2026-09-25 в 18:00 е отхвърлена.
+
+Благодарим ви, че избрахте Paradise Cutz.
+INFO:     127.0.0.1:54127 - "POST /api/barber/reservations/BK-F479EC1D/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54127 - "GET /api/barber/reservations?barber=all&token=84f1698402d14127a16a39cf53c7fdb2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51043 - "POST /api/barber/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51043 - "GET /api/barber/reservations?barber=all&token=5effb7bf268540dea523a6d8af4028a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49232 - "GET /api/barber/reservations?barber=all&token=5effb7bf268540dea523a6d8af4028a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53945 - "GET /api/barber/reservations?barber=all&token=5effb7bf268540dea523a6d8af4028a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56257 - "POST /api/barber/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56257 - "GET /api/barber/reservations?barber=all&token=1c21cd0f63b44c699b7917b5e02efee2 HTTP/1.1" 200 OK
+[EMAIL_SIMULATED] To: paradise_cutz2026@abv.bg
+Subject: Нова заявка за резервация - mmmmmm nnnnnnnnn
+
+Клиент: mmmmmm nnnnnnnnn
+Телефон: 1234567890
+Имейл: mihailkkkkk@gmail.com
+Услуга: Подстригване
+Дата: 2026-09-25
+Час: 18:00
+Approve: http://127.0.0.1:8000/api/booking/actions?id=BK-D893C338&token=4264993af1df421c905ed7012f566937&action=confirm
+Decline: http://127.0.0.1:8000/api/booking/actions?id=BK-D893C338&token=4264993af1df421c905ed7012f566937&action=decline
+Cancel: http://127.0.0.1:8000/api/booking/actions?id=BK-D893C338&token=4264993af1df421c905ed7012f566937&action=cancel
+INFO:     127.0.0.1:50425 - "POST /api/booking HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62278 - "POST /api/barber/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62278 - "GET /api/barber/reservations?barber=all&token=becdc954320143ae98d0cbcc1def8a52 HTTP/1.1" 200 OK
+[EMAIL_SIMULATED] To: mihailkkkkk@gmail.com
+Subject: Paradise Cutz Резервация потвърдена
+
+Здравейте mmmmmm,
+
+Вашата резервация за Димака — Head Barber на 2026-09-25 в 18:00 е потвърдена.
+
+Благодарим ви, че избрахте Paradise Cutz.
+[EMAIL_SIMULATED] To: paradise_cutz2026@abv.bg
+Subject: Потвърждение получено
+
+Резервация BK-D893C338 е потвърдена за mmmmmm nnnnnnnnn на 2026-09-25 в 18:00.
+[EMAIL_SIMULATED] To: paradise_cutz2026@abv.bg
+Subject: Отмяна на резервация
+
+Резервация BK-D893C338 е потвърдена. Отмяна тук: http://127.0.0.1:8000/api/booking/actions?id=BK-D893C338&token=4264993af1df421c905ed7012f566937&action=cancel
+INFO:     127.0.0.1:62278 - "POST /api/barber/reservations/BK-D893C338/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62278 - "GET /api/barber/reservations?barber=all&token=becdc954320143ae98d0cbcc1def8a52 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54042 - "GET /api/barber/reservations?barber=all&token=becdc954320143ae98d0cbcc1def8a52 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58362 - "GET /api/barber/reservations?barber=all&token=becdc954320143ae98d0cbcc1def8a52 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51841 - "POST /api/barber/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51841 - "GET /api/barber/reservations?barber=all&token=bb483adf50094765b38166eb018fbd7d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51841 - "GET /api/barber/reservations?barber=all&token=becdc954320143ae98d0cbcc1def8a52 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51841 - "POST /api/barber/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51841 - "GET /api/barber/reservations?barber=all&token=df0acf0dd4d44f4e8355f659f5dfeb01 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50087 - "GET /api/barber/reservations?barber=all&token=84f1698402d14127a16a39cf53c7fdb2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53584 - "GET /api/barber/reservations?barber=all&token=84f1698402d14127a16a39cf53c7fdb2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50890 - "POST /api/barber/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50890 - "GET /api/barber/reservations?barber=all&token=b3b42bfbbd6344128e73c617608a4968 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50890 - "POST /api/barber/slots/close HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63194 - "GET /api/barber/reservations?barber=all&token=b3b42bfbbd6344128e73c617608a4968 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63194 - "POST /api/barber/slots/close HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63194 - "GET /api/barber/reservations?barber=all&token=b3b42bfbbd6344128e73c617608a4968 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51591 - "GET /api/barber/reservations?barber=all&token=b3b42bfbbd6344128e73c617608a4968 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51591 - "GET /api/barber/reservations?barber=all&token=b3b42bfbbd6344128e73c617608a4968 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56885 - "GET /api/barber/reservations?barber=all&token=b3b42bfbbd6344128e73c617608a4968 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56885 - "POST /api/barber/slots/close HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56885 - "POST /api/barber/slots/close HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56885 - "POST /api/barber/slots/close HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62846 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59797 - "GET /api/barber/reservations?barber=all&token=b3b42bfbbd6344128e73c617608a4968 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59797 - "GET /api/barber/reservations?barber=all&token=b3b42bfbbd6344128e73c617608a4968 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59797 - "POST /api/barber/slots/close HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59797 - "GET /api/barber/reservations?barber=all&token=b3b42bfbbd6344128e73c617608a4968 HTTP/1.1" 200 OK

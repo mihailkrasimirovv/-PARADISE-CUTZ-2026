@@ -1,243 +1,280 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paradise Cutz</title>
-    <meta
-      name="description"
-      content="Paradise Cutz is a barber shop booking website with online appointment requests."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-    <script defer src="js/script.js"></script>
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container nav-wrap">
-        <div class="brand">
-          <span class="brand-mark">P</span>
-          <span>Paradise Cutz</span>
-        </div>
-        <nav class="main-nav" aria-label="Main navigation">
-          <a href="#about">About</a>
-          <a href="#barbers">Barbers</a>
-          <a href="#services">Services</a>
-          <a href="#booking">Book</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <a class="button primary nav-button" href="#booking">Book now</a>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PARADISE CUTZ — Барбершоп</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="nav">
+    <div class="brand-wrap">
+      <img class="brand-logo" src="IMAJES/LOGO.jpg" alt="Paradise Cutz logo">
+      <div class="brand">PARADISE <span class="dot">CUTZ</span></div>
+    </div>
+    <nav class="navlinks">
+      <a href="#barbers">Барбъри</a>
+      <a href="#booking">Резервация</a>
+      <a href="#contact">Контакти</a>
+    </nav>
+    <a href="BARBER%20MANAGE/index.html" class="nav-cta">Barber Login</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="kicker">БАРБЕРШОП — ОТ 2018</p>
+      <h1 class="hero-title">Чист стил.<br>Остър характер.<br>Твоето лице, твоите правила.</h1>
+      <p class="lead">Paradise Cutz е място за мъже, които държат на детайла — от първия fade до последния сешоар. Избери барбър, усети атмосферата и излез с визия, която говори сама.</p>
+      <div class="hero-actions">
+        <a href="#booking" class="btn btn-primary">Запази час онлайн</a>
+        <a href="#barbers" class="btn btn-outline">Виж барбърите</a>
       </div>
-    </header>
+    </div>
+    <div class="hero-art">
+      <img class="logo-graphic" src="IMAJES/LOGO.jpg" alt="Paradise Cutz лого">
+      <div class="tag">Работно време днес<strong>10:30 — 19:00</strong></div>
+    </div>
+  </div>
+</section>
 
-    <main>
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">Premium Grooming Studio</p>
-            <h1>Sharp cuts. Clean finishes. Confident you.</h1>
-            <p class="lead">
-              Experience modern barber care with tailored service, premium attention,
-              and an easy online appointment request system.
-            </p>
-            <div class="hero-actions">
-              <a href="#booking" class="button primary">Book a slot</a>
-              <a href="#barbers" class="button ghost">Meet the barbers</a>
-            </div>
-            <ul class="hero-stats" aria-label="Business facts">
-              <li><strong>4</strong><span>Experts</span></li>
-              <li><strong>7+</strong><span>Years service</span></li>
-              <li><strong>5★</strong><span>Customer care</span></li>
-            </ul>
-          </div>
-          <div class="hero-visual" aria-label="Barber shop interior illustration">
-            <div class="visual-card card-one">
-              <span class="mini-label">Signature</span>
-              <h3>Royal Fade</h3>
-            </div>
-            <div class="visual-card card-two">
-              <span class="mini-label">Popular</span>
-              <h3>Classic Beard</h3>
-            </div>
-            <div class="visual-badge">Open 10:30–18:30</div>
+<section class="pad" id="barbers">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">Екипът</p>
+      <h2>Избери своя барбър</h2>
+      <p>Четирима барбери, един отбор — изискан стил, остър детайл и отношение, което се усеща още от първия fade. Класата е в техниката, улицата е в характера — тук всеки разрез има собствен почерк.</p>
+    </div>
+
+    <div class="barbers-grid">
+      <article class="barber-card" data-barber="dimaka" data-barber-name="Димака — Head Barber" data-barber-email="paradise_cutz2026@abv.bg">
+        <div class="barber-head">
+          <div class="avatar"><img src="IMAJES/ДИМАКА.png" alt="Димака"></div>
+          <div>
+            <p class="name">Димака</p>
+            <p class="role">Head Barber</p>
+            <p class="blurb">Водещ майстор на салона — опит и характер.</p>
           </div>
         </div>
-      </section>
-
-      <section id="about" class="section">
-        <div class="container narrow">
-          <p class="section-tag">About us</p>
-          <h2>Style that fits your routine.</h2>
-          <p>
-            Paradise Cutz blends relaxed atmosphere, modern technique, and reliable
-            service into one premium barber experience. Whether you need a quick trim,
-            a clean fade, or a complete grooming refresh, our barbers deliver with skill and attention.
-          </p>
+        <div class="price-list">
+          <div class="price-row"><span class="item">Подстригване</span><span class="price">23 €</span></div>
+          <div class="price-row"><span class="item">Брада</span><span class="price">13 €</span></div>
+          <div class="price-row"><span class="item">Вежди</span><span class="price">9 €</span></div>
+          <div class="price-row"><span class="item">Коса + Вежди</span><span class="price">25 €</span></div>
+          <div class="price-row"><span class="item">Коса + Брада</span><span class="price">27 €</span></div>
+          <div class="price-row"><span class="item">Коса + Брада + Вежди</span><span class="price">29 €</span></div>
+          <div class="price-row"><span class="item">Измиване + стилизиране</span><span class="price">4 €</span></div>
         </div>
-      </section>
+        <div class="barber-foot">
+          <button class="btn btn-primary" onclick="preselectBarber('dimaka')">Резервирай при Димака</button>
+        </div>
+      </article>
 
-      <section id="barbers" class="section alt-section">
-        <div class="container">
-          <div class="section-heading">
-            <p class="section-tag">Our barbers</p>
-            <h2>Meet the specialists</h2>
-          </div>
-          <div class="barber-grid" id="barberGrid">
-            <article class="barber-card active" data-barber="gogata">
-              <div class="barber-avatar avatar-gogata">G</div>
-              <div class="barber-meta">
-                <h3>Gogata</h3>
-                <p>Royal Barber</p>
-              </div>
-            </article>
-            <article class="barber-card" data-barber="dimaka">
-              <div class="barber-avatar avatar-dimaka">D</div>
-              <div class="barber-meta">
-                <h3>Dimaka</h3>
-                <p>Head Barber</p>
-              </div>
-            </article>
-            <article class="barber-card" data-barber="rasho">
-              <div class="barber-avatar avatar-rasho">R</div>
-              <div class="barber-meta">
-                <h3>Rasho</h3>
-                <p>Special Barber</p>
-              </div>
-            </article>
-            <article class="barber-card" data-barber="erik">
-              <div class="barber-avatar avatar-erik">E</div>
-              <div class="barber-meta">
-                <h3>Erik</h3>
-                <p>Master Barber</p>
-              </div>
-            </article>
+      <article class="barber-card" data-barber="rasho" data-barber-name="Рашо — Special Barber" data-barber-email="paradise_cutz2026@abv.bg">
+        <div class="barber-head">
+          <div class="avatar"><img src="IMAJES/РАШО.png" alt="Рашо"></div>
+          <div>
+            <p class="name">Рашо</p>
+            <p class="role">Special Barber</p>
+            <p class="blurb">Свеж стил с усет за актуалните тенденции.</p>
           </div>
         </div>
-      </section>
+        <div class="price-list">
+          <div class="price-row"><span class="item">Подстригване</span><span class="price">18 €</span></div>
+          <div class="price-row"><span class="item">Брада</span><span class="price">9 €</span></div>
+          <div class="price-row"><span class="item">Вежди</span><span class="price">9 €</span></div>
+          <div class="price-row"><span class="item">Коса + Вежди</span><span class="price">20 €</span></div>
+          <div class="price-row"><span class="item">Коса + Брада</span><span class="price">23 €</span></div>
+          <div class="price-row"><span class="item">Коса + Брада + Вежди</span><span class="price">27 €</span></div>
+          <div class="price-row"><span class="item">Измиване + стилизиране</span><span class="price">4 €</span></div>
+        </div>
+        <div class="barber-foot">
+          <button class="btn btn-primary" onclick="preselectBarber('rasho')">Резервирай при Рашо</button>
+        </div>
+      </article>
 
-      <section id="services" class="section">
-        <div class="container">
-          <div class="section-heading">
-            <p class="section-tag">Services</p>
-            <h2>Tailored grooming packages</h2>
-          </div>
-          <div class="services-grid">
-            <div class="service-panel">
-              <h3>Classic Cut</h3>
-              <p>Precision haircut with styling finish.</p>
-              <span>From 35€</span>
-            </div>
-            <div class="service-panel">
-              <h3>Beard Grooming</h3>
-              <p>Trim, shape, and clean outline.</p>
-              <span>From 18€</span>
-            </div>
-            <div class="service-panel">
-              <h3>Hot Towel Shave</h3>
-              <p>Close shave with premium finish.</p>
-              <span>From 30€</span>
-            </div>
-            <div class="service-panel">
-              <h3>Hair & Beard</h3>
-              <p>Full treatment for a complete look.</p>
-              <span>From 48€</span>
-            </div>
+      <article class="barber-card" data-barber="erik" data-barber-name="Ерик — Master Barber" data-barber-email="paradise_cutz2026@abv.bg">
+        <div class="barber-head">
+          <div class="avatar"><img src="IMAJES/ЦЕНИ РАШО И ЕРИК ФИНАЛ.jpg" alt="Ерик"></div>
+          <div>
+            <p class="name">Ерик</p>
+            <p class="role">Master Barber</p>
+            <p class="blurb">Прецизност и класически подход.</p>
           </div>
         </div>
-      </section>
+        <div class="price-list">
+          <div class="price-row"><span class="item">Подстригване</span><span class="price">18 €</span></div>
+          <div class="price-row"><span class="item">Брада</span><span class="price">9 €</span></div>
+          <div class="price-row"><span class="item">Вежди</span><span class="price">9 €</span></div>
+          <div class="price-row"><span class="item">Коса + Вежди</span><span class="price">20 €</span></div>
+          <div class="price-row"><span class="item">Коса + Брада</span><span class="price">23 €</span></div>
+          <div class="price-row"><span class="item">Коса + Брада + Вежди</span><span class="price">27 €</span></div>
+          <div class="price-row"><span class="item">Измиване + стилизиране</span><span class="price">4 €</span></div>
+        </div>
+        <div class="barber-foot">
+          <button class="btn btn-primary" onclick="preselectBarber('erik')">Резервирай при Ерик</button>
+        </div>
+      </article>
 
-      <section id="booking" class="section booking-section">
-        <div class="container booking-wrap">
-          <div class="booking-copy">
-            <p class="section-tag">Book an appointment</p>
-            <h2>Request your next grooming visit.</h2>
-            <p>
-              Pick a barber, choose a time, and send your request. We’ll confirm the appointment by email and follow-up through the reservation workflow.
-            </p>
+      <article class="barber-card" data-barber="gogata" data-barber-name="Гогата — Royal Barber" data-barber-email="paradise_cutz2026@abv.bg">
+        <div class="barber-head">
+          <div class="avatar"><img src="IMAJES/ГОГАТА.png" alt="Гогата"></div>
+          <div>
+            <p class="name">Гогата</p>
+            <p class="role">Royal Barber</p>
+            <p class="blurb">Изчистена линия и внимание към всеки детайл.</p>
           </div>
-
-          <form id="bookingForm" class="booking-form" novalidate>
-            <div class="field-row">
-              <label>
-                Barber
-                <select id="barberSelect" name="barber" required></select>
-              </label>
-              <label>
-                Service
-                <select id="serviceSelect" name="service" required></select>
-              </label>
-            </div>
-
-            <div class="field-row">
-              <label>
-                Date
-                <input id="bookingDate" name="date" type="date" required />
-              </label>
-            </div>
-
-            <div class="field-row time-row">
-              <div class="time-label-wrap">
-                <label>Available times</label>
-                <span id="selectedTimeLabel">No time selected</span>
-              </div>
-              <div id="timeSlots" class="time-slots" aria-live="polite"></div>
-            </div>
-
-            <input type="hidden" id="selectedTime" name="time" />
-
-            <div class="field-row">
-              <label>
-                First name
-                <input id="firstName" name="fname" type="text" required placeholder="Your first name" />
-              </label>
-              <label>
-                Last name
-                <input id="lastName" name="lname" type="text" required placeholder="Your surname" />
-              </label>
-            </div>
-
-            <div class="field-row">
-              <label>
-                Phone number
-                <input id="phone" name="phone" type="tel" required placeholder="+359 888 123 456" />
-              </label>
-              <label>
-                Email (optional)
-                <input id="email" name="email" type="email" placeholder="name@example.com" />
-              </label>
-            </div>
-
-            <button type="submit" class="button primary submit-button">Send booking request</button>
-          </form>
         </div>
-      </section>
-    </main>
+        <div class="price-list">
+          <div class="price-row"><span class="item">Подстригване</span><span class="price">25 €</span></div>
+          <div class="price-row"><span class="item">Брада</span><span class="price">15 €</span></div>
+          <div class="price-row"><span class="item">Вежди</span><span class="price">5 €</span></div>
+          <div class="price-row"><span class="item">Коса + Вежди</span><span class="price">30 €</span></div>
+          <div class="price-row"><span class="item">Коса + Брада</span><span class="price">35 €</span></div>
+          <div class="price-row"><span class="item">Коса + Брада + Вежди</span><span class="price">40 €</span></div>
+          <div class="price-row"><span class="item">Измиване</span><span class="price">5 €</span></div>
+        </div>
+        <div class="barber-foot">
+          <button class="btn btn-primary" onclick="preselectBarber('gogata')">Резервирай при Гогата</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
-    <footer id="contact" class="site-footer">
-      <div class="container footer-wrap">
-        <div>
-          <div class="brand footer-brand">
-            <span class="brand-mark">P</span>
-            <span>Paradise Cutz</span>
+<section class="pad" id="booking">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">Онлайн резервация</p>
+      <h2>Запази своя час</h2>
+      <p>Избери барбър, дата и свободен час. Заявката се изпраща директно към имейла на избрания барбър.</p>
+    </div>
+
+    <form class="booking-shell" id="bookingForm">
+      <div class="booking-col">
+        <h3>1. Дата и час</h3>
+        <div class="field">
+          <label for="barber">Барбър</label>
+          <select id="barber" required>
+            <option value="">Избери барбър</option>
+            <option value="dimaka">Димака — Head Barber</option>
+            <option value="rasho">Рашо — Special Barber</option>
+            <option value="erik">Ерик — Master Barber</option>
+            <option value="gogata">Гогата — Royal Barber</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="date">Дата</label>
+          <input type="date" id="date" required>
+        </div>
+        <div class="field">
+          <label>Час</label>
+          <div class="legend">
+            <span class="l-free"><i></i> Свободен</span>
+            <span class="l-taken"><i></i> Зает</span>
+            <span class="l-sel"><i></i> Избран</span>
           </div>
-          <p>Modern barber care for everyday confidence.</p>
-        </div>
-        <div>
-          <h4>Visit us</h4>
-          <p>123 Barber Street<br />Sofia, Bulgaria</p>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <p>+359 88 123 4567<br />paradise_cutz2026@abv.bg</p>
+          <div class="slots" id="slots"></div>
         </div>
       </div>
-    </footer>
 
-    <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  </body>
+      <div class="booking-col">
+        <h3>2. Услуга и данни</h3>
+        <div class="field">
+          <label for="service">Услуга <span class="req">*</span></label>
+          <select id="service" required>
+            <option value="">Първо избери барбър</option>
+          </select>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="fname">Име <span class="req">*</span></label>
+            <input type="text" id="fname" placeholder="Име" required>
+          </div>
+          <div class="field">
+            <label for="flastname">Фамилия <span class="req">*</span></label>
+            <input type="text" id="flastname" placeholder="Фамилия" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="fphone">Телефон <span class="req">*</span></label>
+          <input type="tel" id="fphone" placeholder="+359 877959597" required>
+        </div>
+        <div class="field">
+          <label for="femail">Имейл <span class="req">*</span></label>
+          <input type="email" id="femail" placeholder="example@mail.com" required>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;text-align:center;">Заяви час</button>
+        <p class="form-note">След заявка барбърът получава имейл и потвърждава, отказва или отменя часа. Имейлът е задължителен, за да може да получиш потвърждение за резервацията си.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="pad" id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">Свържи се с нас</p>
+      <h2>Намери ни</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="panel">
+        <h3>Обади се или ни посети</h3>
+        <a class="phone-line" href="tel:+359877959597">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +359 877959597
+        </a>
+        <a class="email-line" href="mailto:paradise_cutz2026@abv.bg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+          paradise_cutz2026@abv.bg
+        </a>
+        <div class="addr">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex:none;margin-top:3px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>бул. „Никола Й. Вапцаров“ 35, 1407 Хладилника, София</span>
+        </div>
+        <p class="group-label" style="text-transform:uppercase;font-size:.78rem;letter-spacing:.1em;color:var(--muted);margin-bottom:10px;">Работно време</p>
+        <div class="hours-row"><span>Понеделник</span><span>10:30 – 19:00</span></div>
+        <div class="hours-row"><span>Вторник – Петък</span><span>10:30 – 19:00</span></div>
+        <div class="hours-row"><span>Събота</span><span>10:30 – 19:00</span></div>
+        <div class="hours-row"><span>Неделя</span><span>Почивен ден</span></div>
+      </div>
+
+      <div class="panel">
+        <h3>Локация</h3>
+        <div class="map-decor"><div class="pin"></div></div>
+        <a href="https://www.google.com/maps?q=42.6644724,23.3172632" target="_blank" rel="noopener" class="btn btn-outline" style="width:100%;text-align:center;margin-bottom:26px;">Отвори в Google Карти ↗</a>
+        <h3>Последвай ни</h3>
+        <div class="socials">
+          <a class="social-btn" href="#" aria-label="TikTok" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z"/></svg>
+          </a>
+          <a class="social-btn" href="#" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+          <a class="social-btn" href="#" aria-label="Facebook" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8h2.6l.4-3h-3v-1.9c0-.9.3-1.5 1.6-1.5H16V4.3c-.3 0-1.2-.2-2.2-.2-2.2 0-3.8 1.3-3.8 3.8V11h-2v3h2v8h2.5z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">PARADISE <span class="dot">CUTZ</span></div>
+    <div class="fine">© 2026 Paradise Cutz</div>
+  </div>
+</footer>
+
+<div id="toast"></div>
+<script src="js/script.js"></script>
+</body>
 </html>
